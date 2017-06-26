@@ -92,6 +92,7 @@ p.button {
 }
 
 p.light {
+  font-family: 'Oswald', sans-serif;
   text-align:center;
   color: rgba(10, 10, 10, 1);
   font-size: 16px;
@@ -117,6 +118,7 @@ h4.contact {
 
 p.bold {
   text-align: center;
+  font-family: 'Oswald', sans-serif;
   color: rgba(10, 10, 10, 1);
   font-size: 16px;
   margin: 0 auto;
@@ -2616,6 +2618,7 @@ h5 {
 }
 
 p.jobtitle {
+  font-family: 'Oswald', sans-serif;
   font-size: 18px;
   color: rgba(10, 10, 10, 1);
   width: 80%;
@@ -2624,6 +2627,7 @@ p.jobtitle {
 }
 
 p.jobtitle-white {
+  font-family: 'Oswald', sans-serif;
   font-size: 18px;
   background: rgba(255, 255, 255, 0.7);
   padding-top: 3px;
