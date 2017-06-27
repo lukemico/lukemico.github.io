@@ -171,6 +171,19 @@ div.col.s2 {
   letter-spacing: .40em;
 }
 
+div.col.s11 {
+  text-align: center;
+  background: none;
+  color: black;
+  width: 27%;
+  border: 1.5px solid black;
+  padding: 1px;
+  margin: 0 auto;
+  height: 28px;
+  letter-spacing: .40em;
+}
+
+
 div.icon {
   text-align: center;
   background: none;
@@ -185,6 +198,12 @@ div.icon {
 div.col.s2:hover {
   background: none;
   color: rgba(10, 10, 10, 1);
+}
+
+div.col.s2.3 {
+  background: none;
+  color: rgba(10, 10, 10, 1);
+  text-align: center;
 }
 
 div.col.s3 {
@@ -209,10 +228,28 @@ div.col.s4 {
   letter-spacing: .40em;
 }
 
+div.col.s15 {
+  text-align: center;
+  background: none;
+  color: black;
+  width: 32%;
+  border: 1.5px solid black;
+  padding: 1px;
+  margin: 0 auto;
+  height: 28px;
+  letter-spacing: .40em;
+}
+
 div.col.s4:hover {
   background: none;
   color: rgba(10, 10, 10, 1);
   border: 1.5px solid rgba(10, 10, 10, 1)
+}
+
+div.s4.3 {
+  background: none;
+  color: rgba(10, 10, 10, 1);
+  text-align: center;
 }
 
 div.col.s5 {
