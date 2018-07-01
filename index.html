@@ -1,776 +1,884 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 
-  <title>Luke Mico</title>
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Luke Mico</title>
+	<meta name="description" content=".">
+	<meta name="author" content="">
+	
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- CSS Files
+	* cssreset-min.css 			- CSS reset
+	* typegrid.css				- Responsive grid system
+	* style.css					- Main CSS file
+	
+	Original LESS Stylesheet
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	================================================== -->
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
+	<link rel="stylesheet" type="text/css" href="css/typegrid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
 
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="path/to/font-mfizz/font-mfizz.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:Extra-Light" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:Light" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:Semi-Bold" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:Bold" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Rock+Salt" rel="stylesheet">
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
-  <script src="https://use.fontawesome.com/5564d5d138.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-  <style>
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-  }
-
-  #myBtn:hover {
-    background-color: #555;
-  }
-  </style>
-
-  <script>
-  // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
 </head>
 
 <body>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-
-
-
-  <!-- <svg
-  	 width="1000" height="1000" viewBox="0 0 1000 1000"
-  	 xmlns="http://www.w3.org/2000/svg" version="1.1"
-  	 xmlns:xlink="http://www.w3.org/1999/xlink">
-  	<g transform="translate(500,500)">
-  		<rect class="rotate-45 rotate-back" x=-5 y=-5 width=10 height=10 stroke="black" stroke-width=20 fill="none"/>
-  		<rect class="rotate-45 rotate" x=-50 y=-50 width=100 height=100 stroke="black" stroke-width=20 stroke-linejoin="bevel" fill="none"/>
-  		<g transform="translate(-50,0) rotate(-45)"><polyline class="left" points="40,-40 50,-50 -40,-50 -50,-40 -50,50 -40,40" stroke="black" stroke-width=20 fill="none"/></g>
-  		<g transform="translate(50,0) rotate(135)"><polyline class="right" points="40,-40 50,-50 -40,-50 -50,-40 -50,50 -40,40" stroke="black" stroke-width=20 fill="none"/></g>
-  		<text y=-140 text-anchor="middle" font-weight="bold" font-size="3em" font-family="sans-serif">loading...</text>
-  	</g>
-  </svg> -->
-
-  <div id="page-wrap">
-    <p id="top"></p>
-
-    <h1 class="elegantshadow">LUKE<BR><div class="blank">
-
-  </div>
-
-    MICO</h1>
-
-    <h4>I'm a curious and eager Sydney based full-stack web developer keen to explore opportunities, and add value to organisations I collaborate with.</h4>
-
-    <div id="page-wrap">
-
-      <div class="container">
-        <div class="row">
-          <div class="blank2">
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col s1">
-            <p></p>
-          </div>
-
-          <div class="col s2">
-            <a href="#projects">
-              <p class="button">PROJECTS</p>
-            </a>
-          </div>
-
-          <div class="col s8">
-            <p></p>
-          </div>
-
-          <div class="col s2">
-            <a href="#resume">
-              <p class="button">WORK HISTORY</p>
-            </a>
-          </div>
-
-          <div class="col s8">
-            <p></p>
-          </div>
-
-          <div class="col s2">
-            <a href="#skills">
-              <p class="button">SKILLS</p>
-            </a>
-          </div>
-
-          <div class="col s1">
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col s5">
-            <p></p>
-          </div>
-
-          <div class="col s4">
-            <a href="https://week01day01.tumblr.com/">
-              <p class="button">BLOG</p>
-            </a>
-          </div>
-
-          <div class="col s6">
-            <p></p>
-          </div>
-
-          <div class="col s4">
-            <a href="#about">
-              <p class="button">ABOUT ME</p>
-            </a>
-          </div>
-
-          <div class="col s5">
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col s7">
-          </div>
-
-          <div class="col s2">
-            <a href="https://www.linkedin.com/in/lukemico/">
-              <p class="button">GET IN TOUCH</p>
-            </a>
-          </div>
-          <div class="col s7">
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="blank2">
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div id="navcontainer">
-        <div class="wrapper">
-          <ul id="navlist">
-            <li><a href="https://github.com/lukemico"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/LukeMico"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/lukemico/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true" height="100" width="100"></i></a></li>
-
-          </ul>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="blank3">
-
-            <!-- Return to Top -->
-            <!-- <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a> -->
-
-            <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
-            <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-
-            <!-- Test the scroll -->
-            <!-- <div style="height:2000px;">
-
-            </div> -->
-
-            <!-- <i class="icon-arrow-down"></i> -->
-
-          </div>
-        </div>
-      </div>
-
-      <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <br><br>
-
-            <p id="about"></p>
-
-            <div class="half first-half">
-              <img src="images/luke.jpg" class="headshot" alt="">
-            </div>
-
-            <h2 class="greeting">Hi, I'm Luke</h2>
-
-            <h4 class="night">I'm passionate about all things design, from the technical, functional and creative, I decided to move into web development as I like to build things that have a purpose, and coding challenges me to do just that.</h4>
-            <div class="col s22">
-            </div>
-            <br>
-            <h4 class="night">With a background in brand marketing, digital marketing, social media and campaign management, I bring a wide range of skills that help me to look at the 'big-picture' whilst also being able to look under the hood when I'm coding.</h4>
-            <div class="col s22">
-            </div>
-            <br>
-
-            <div class="row center">
-              <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get in touch</a>
-            </div>
-
-            <br><br>
-
-          </div>
-        </div>
-        <div class="parallax"><img src="images/image1.jpg" width="100%" , alt="Unsplashed background img 1"></div>
-      </div>
-
-      <div class="container">
-        <div class="section">
-
-          <div class="blank">
-          </div>
-
-          <h3 id="resume"></h3>
-          <h3 class="work-history">WORK HISTORY</h3>
-
-          <hr>
-
-          <div class="row">
-            <div class="col s12">
-              <div class="icon-block">
-                <p class="jobtitle">Giorgio Armani</p>
-                <p class="bold">Marketing Manager - July 2016 - February 2017 </p>
-
-                <div class="container">
-                  <div class="row">
-                    <div class="col s22">
-                    </div>
-                    <p class="light">I managed development and execution of marketing campaigns, including CRM, digital marketing and social media including email marketing, SMS and direct mail plus events using data-driven insights to deliver strategic marketing plans.
-                    </p>
-                  </div>
-                  <div class="col s22">
-                  </div>
-                </div>
-
-                <div class="col s12 m12">
-                  <div class="icon-block">
-                    <p class="jobtitle">David Jones Limited</p>
-                    <p class="bold">Marketing Specialist - February 2014 - July 2016</p>
-
-                    <div class="container">
-                      <div class="row">
-                        <div class="col s22">
-                        </div>
-                        <p class="light">I managed integrated marketing campaigns for this prestigious multi-channel retailer including digital, social, e-commerce, catalogue and print across fashion, home and beauty, supporting commercial initiatives. This included using SalesForce for campaign management, Basecamp for project management and HootSuite for social media.
-                        </p>
-                      </div>
-                      <div class="col s22">
-                      </div>
-                    </div>
-
-                    <div class="col s12 m12">
-                      <div class="icon-block">
-                        <p class="jobtitle">Speciality Fashion Group</p>
-                        <p class="bold">Marketing Executive - July 2013 - February 2014 (contract role)</p>
-
-                        <div class="container">
-                          <div class="row">
-                            <div class="col s22">
-                            </div>
-
-                            <p class="light">I developed brand and loyalty campaigns for the Millers clothing brand, across TVC, radio, catalogue (print + digital), eDM/direct mail, and social media (Facebook, Instagram, YouTube). I led a rebrand project incorporating
-                              brand, digital, e-commerce, customer experience and visual merchandising.
-                            </p>
-                          </div>
-                          <div class="col s22">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div id="index-banner" class="parallax-container-glasses">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <br><br>
-
-            <div id="projects"></div>
-            <h3 class="projects">PROJECTS</h3>
-
-            <div class="container">
-              <div class="row">
-
-                <div class="col s1">
-                  <p></p>
-                </div>
-
-                <div class="col s2">
-                  <a href="https://evento-app.herokuapp.com">
-                    <p class="button">Eventö</p>
-                  </a>
-                </div>
-
-                <div class="col s8">
-                  <p></p>
-                </div>
-
-                <div class="col s2">
-                  <a href="https://evening-meadow-28943.herokuapp.com/">
-                    <p class="button">TicTacToe</p>
-                  </a>
-                </div>
-
-                <div class="col s8">
-                  <p></p>
-                </div>
-
-                <div class="col s2">
-                  <a href="https://sheltered-sands-55639.herokuapp.com/">
-                    <p class="button">API Mania</p>
-                  </a>
-                </div>
-                <div class="col s1">
-                  <p></p>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="row">
-
-                <div class="col s1">
-                  <p></p>
-                </div>
-
-                <div class="col s11">
-                  <a href="https://github.com/lukemico/Project_02_Evento">
-                    <p class="col.s2.3">GitHub code</p>
-                  </a>
-                </div>
-
-                <div class="col s8">
-                  <p></p>
-                </div>
-
-                <div class="col s11">
-                  <a href="https://github.com/lukemico/Project_00-TicTacToe">
-                    <p class="col.s2.3">GitHub code</p>
-                  </a>
-                </div>
-
-                <div class="col s8">
-                  <p></p>
-                </div>
-
-                <div class="col s11">
-                  <a href="https://github.com/lukemico/APImania">
-                    <p class="col.s2.3">GitHub code</p>
-                  </a>
-                </div>
-
-                <div class="col s1">
-                  <p></p>
-                </div>
-
-              </div>
-            </div>
-
-
-            <div class="container">
-              <div class="row">
-
-                <div class="col s5">
-                  <p></p>
-                </div>
-
-                <div class="col s4">
-                  <a href="https://agile-forest-55401.herokuapp.com/">
-                    <p class="button">McFly Airlines</p>
-                  </a>
-                </div>
-
-                <div class="col s6">
-                  <p></p>
-                </div>
-
-                <div class="col s4">
-                  <a href="https://whispering-cliffs-35641.herokuapp.com/">
-                    <p class="button">F*O*O*D*I*E</p>
-                  </a>
-                </div>
-
-                <div class="col s5">
-                  <p></p>
-                </div>
-
-              </div>
-            </div>
-
-
-            <div class="container">
-              <div class="row">
-
-                <div class="col s5">
-                  <p></p>
-                </div>
-
-                <div class="col s15">
-                  <a href="https://github.com/lukemico/Project_04_McFlyAirlines">
-                    <p class="s4.3">GitHub code</p>
-                  </a>
-                </div>
-
-                <div class="col s6">
-                  <p></p>
-                </div>
-
-                <div class="col s15">
-                  <a href="https://github.com/lukemico/Project_01_F-O-O-D_App">
-                    <p class="s4.3">GitHub code</p>
-                  </a>
-                </div>
-
-                <div class="col s5">
-                  <p></p>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col s7">
-                  <p></p>
-                </div>
-                <div class="col s2">
-                  <a href="">
-                    <p class="button">Test Driven Development</p>
-                  </a>
-                </div>
-                <div class="col s7">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col s7">
-                  <p></p>
-                </div>
-                <div class="col s11">
-                  <a href="https://github.com/lukemico/TestDrivenDevelopment">
-                    <p class="s2.3">GitHub code</p>
-                  </a>
-                </div>
-                <div class="col s7">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-
-
-
-            <br><br>
-
-          </div>
-        </div>
-        <div class="parallax"><img src="images/image31.jpg" width="100%" , alt="Unsplashed background img 1"></div>
-      </div>
-
-      <div class="container">
-        <div class="section">
-
-          <div class="row">
-            <div class="col s12 center">
-              <h3><i class="mdi-content-send brown-text"></i></h3>
-              <h2 id="skills"></h2>
-              <h3>SKILLS</h3>
-
-              <hr>
-              <div>
-              <p class="light">During my time with General Assembly, I've had exposure to, and worked on a number of projects using the following languages, frameworks and technologies.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="blank">
-
-                <div class="container">
-                  <!-- <div class="row"> -->
-                  <div class="col s20">
-                  </div>
-
-                  <div class="container">
-                    <div class="row">
-
-                      <div class="logo">
-                        <img src="logos/javascript-original.svg" class="logo" alt="">
-                      </div>
-
-                      <div class="logo">
-                        <img src="logos/html5-original-wordmark.svg" class="logo" alt="">
-                      </div>
-
-                      <div class="logo">
-                        <img src="logos/css3-original-wordmark.svg" class="logo" alt="">
-                      </div>
-
-                      <div class="logo">
-                        <img src="logos/ruby-original-wordmark.svg" class="logo" alt="">
-                      </div>
-
-                      <div class="logo">
-                        <img src="logos/heroku-plain-wordmark.svg" class="logo" alt="">
-                      </div>
-
-                      <div class="logo">
-                        <img src="logos/rails-original-wordmark.svg" class="logo" alt="">
-                      </div>
-
-                      <div class="col s20">
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="container">
-                    <div class="row">
-
-                      <div class="container">
-                        <div class="row">
-                          <div class="col s20">
-                          </div>
-
-                          <div class="container">
-                            <div class="row">
-
-                              <div class="logo">
-                                <img src="logos/github-original-wordmark.svg" class="logo" alt="">
-                              </div>
-
-                              <div class="logo">
-                                <img src="logos/atom-original-wordmark.svg" class="logo" alt="">
-                              </div>
-
-                              <div class="logo">
-                                <img src="logos/bootstrap-plain-wordmark.svg" class="logo" alt="">
-                              </div>
-
-                              <div class="logo">
-                                <img src="logos/react-original-wordmark.svg" class="logo" alt="">
-                              </div>
-
-                              <div class="logo">
-                                <img src="logos/nodejs-original-wordmark.svg" class="logo" alt="">
-                              </div>
-
-                              <div class="logo">
-                                <img src="logos/backbonejs-plain-wordmark.svg" class="logo" alt="">
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="container">
-                          <div class="row">
-                            <div class="col s20">
-                            </div>
-
-                            <div class="container">
-                              <div class="row">
-
-                                <div class="logo">
-                                  <img src="logos/postgresql-original-wordmark.svg" class="logo" alt="">
-                                </div>
-
-                                <div class="logo">
-                                  <img src="logos/babel-plain.svg" class="logo" alt="">
-                                </div>
-
-                                <div class="logo">
-                                  <img src="logos/webpack-original-wordmark.svg" class="logo" alt="">
-                                </div>
-
-                                <div class="logo">
-                                  <img src="logos/slack-original-wordmark.svg" class="logo" alt="">
-                                </div>
-
-                                <div class="logo">
-                                  <img src="logos/trello-plain-wordmark.svg" class="logo" alt="">
-                                </div>
-
-                                <div class="logo">
-                                  <img src="logos/jquery-original-wordmark.svg" class="logo" alt="">
-                                </div>
-
-                              </div>
-                            </div>
-
-                            <div class="container">
-                              <div class="row">
-                                <div class="blank">
-                                  <p></p>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="parallax-container valign-wrapper">
-                      <!-- <div class="section no-pad-bot"> -->
-                      <div class="container">
-                        <div class="row center">
-
-                          <h3>EDUCATION</h3>
-                          <br>
-                          <div class="row">
-                            <div class="col s12">
-                              <div class="icon-block">
-                                <p class="jobtitle-white">General Assembly</p>
-                                <p class="bold-white">Web Development Immersive - March - June 2017 </p>
-                                <br>
-                                <p class="jobtitle-white">Charles Sturt University</p>
-                                <p class="bold-white">Bachelor of Business (Marketing) - 2009 - 2014</p>
-                                <br>
-                                <p class="jobtitle-white">SkillSoft Learning</p>
-                                <p class="bold-white">Certified Associate of Project Management (CAPM) - 2014</p>
-                                <br>
-                                <p class="jobtitle-white">Shillington College</p>
-                                <p class="bold-white">Certificate IV in Graphic Design - 2005</p>
-
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                      <br>
-                      <!-- </div> -->
-                      <div class="parallax"><img src="images/image4.jpg" width="100%" , alt="Unsplashed background img 3"></div>
-                    </div>
-                  </div>
-
-                  <footer class="page-footer teal">
-                    <div class="container">
-                      <div class="row">
-                          <br>
-                          <h4 class="night">GET IN TOUCH</h4>
-
-                          <p class="jobtitle">If you're interested in development-related opportunities or just want to grab a coffee,
-                          <br>feel free to give me a call or shoot me an e-mail.</p>
-                          <br>
-                      <div id="navcontainer">
-                        <div class="wrapper">
-                          <ul id="navlist">
-
-                      <li><a href="https://github.com/lukemico"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></li>
-
-                      <li><a href="https://twitter.com/LukeMico"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
-
-                      <li><a href="https://www.linkedin.com/in/lukemico/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true" height="100" width="100"></i></a></li>
-                    </ul>
-                  </div>
-                  </div>
-                  <div>
-                    <ul class="black-text-contact">
-                      <!-- <a class="black-text-contact" style="list-style:disc;" href="">M: 0418 286 481 </a> -->
-                      <a class="black-text-contact" href="">E: lukemico@me.com</a>
-                      <a class="black-text-contact" href="">L: linkedin.com/in/lukemico</a>
-                      <a class="black-text-contact" href="">T: @lukemico</a>
-                    </ul>
-                  </div>
-                </div>
-
-
-
-                  <br>
-                    <div class="footer-copyright">
-                      <div class="container">
-                        <a class="black-text" href="https://www.linkedin.com/in/lukemico/">Site by Luke Mico © 2017</a>
-                      </div>
-                    </div>
-                  </footer>
-
-                </div>
-              </div>
-            </div>
-          </div>
 
+	<!-- Header - Half Logo
+	================================================== -->
+	<section id="header">
+
+		<!-- * * * * * * * * * * * * * * * * * * * * * * *
+
+			Top Bar & Menu (#nav)
+
+		* * * * * * * * * * * * * * * * * * * * * * * * -->
+		<div class="topbar">
+			<div class="container">
+					
+				<!--
+					A custom jQuery plugin called typeMenu handles the menu
+					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
+				-->
+				<ul id="nav" class="full">
+					<li>
+						<a href="about.html">
+							<span class="count hide-on-mobile">01.</span>
+							About
+						</a>
+						<ul>
+							<li><a href="index-with-flexslider.html">Work Experience</a></li>
+							<li><a href="contact.html">Get In Touch</a></li>
+							<li><a href="single-blog.html"></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="works-stackgrid-with-title.html">
+							<span class="count hide-on-mobile">02.</span>
+							Works
+						</a>
+						<ul>
+							<li><a href="works-architecture-three-columns.html">Web Development</a></li>
+							<li><a href="https://www.shocase.com/go/user/S14e46ycgyumvxS16ugtmehiz0q7">Shocase</a></li>
+							<li class="hide-on-mobile"><a href="http://levelup.thoughtworks.com/blog/2018/3/28/guest-blog-meet-luke">LevelUp / ThoughtWorks</a></li>
+							<li><a href="single-blog.html"></a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="archive-blog.html">
+							<span class="count hide-on-mobile">03.</span>
+							Skills
+						</a>
+						<ul>
+							<li><a href="https://week01day01.tumblr.com/">Skills and Technology</a></li>
+							<li><a href="single-blog.html"></a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="archive-blog.html">
+							<span class="count hide-on-mobile">04.</span>
+							Blog
+						</a>
+						<ul>
+							<li><a href="https://week01day01.tumblr.com/">Week01Day01</a></li>
+							<li><a href="single-blog.html"></a></li>
+						</ul>
+					</li>
+					
+				</ul><!-- // #nav -->
+
+			</div><!-- // .container -->
+		</div><!-- // .topbar -->
+
+		<div class="logo-wrap">
+			<div class="container">
+				<div class="desktop-12 columns">
+					<h1 class="elegantshadow"><a href="index.html" title="Home">LUKE MICO</a></h1>
+					<br />
+					<span class="site-desc">Everything is connected - from product to all things digital.</span>
+				</div><!-- // .desktop-6 -->
+
+				<div class="desktop-6 columns">
+					<h2 >
+						<br />
+					
+					</p><!-- // .site-desc -->
+				</div><!-- // .desktop-6 -->
+
+				<div class="clear"></div>
+			</div><!-- // .container -->
+		</div><!-- // .logo-wrap -->
+	</section><!-- // #header -->
+
+	<!-- About
+	================================================== -->
+	<section id="about" class="page">
+		
+		<div class="container">
+
+			<div class="desktop-12 columns"><div class="border-top"></div></div>
+			
+			<div class="clear"></div>
+
+			<div class="desktop-3 tablet-12 columns">
+				<h2>About Me</h2><img src="images/luke.jpg" class="headshot" alt="">
+			</div>
+			
+			<div class="desktop-9 tablet-12 columns">
+				<p class="page-desc">I'm a curious and eager Sydney based full-stack web developer keen to explore opportunities, and add value to organisations I collaborate with. </p>
+			</div>
+		</div><!-- // .container -->
+
+		<div class="services">
+
+			<div class="container">
+				
+					<div class="item">
+						<div class="desktop-3 tablet-6 columns">
+							<img src="images/about_services01.png" alt="">
+						</div><!-- // .desktop-3 -->
+
+						<div class="desktop-8 tablet-6 columns">
+							<h4>Hi, I'm Luke.</h4>
+							<p>I'm passionate about all things design, from the technical, functional and creative, I made the choice to transition into web development as I like to build things that have a purpose, and coding challenges me to do just that. </p>
+						</div><!-- // .desktop-6 -->
+
+						<div class="clear"></div>
+					</div><!-- // .item -->
+			
+					<div class="item">
+						<div class="desktop-3 offset-3 tablet-6 tablet-offset-0 columns">
+							<img src="images/about_services02.png" alt="">
+						</div><!-- // .desktop-3 -->
+
+						<div class="desktop-6 tablet-6 columns">
+							<h4>Everything is connected.</h4>
+							<p>With a background in brand marketing, digital marketing, social media, creative direction and project management, I bring a wide range of skills that help me to look at the 'big-picture' whilst also being able to look under the hood when I'm coding.</p>
+						</div><!-- // .desktop-6 -->
+
+						<div class="clear"></div>
+					</div><!-- // .item -->
+					
+			</div><!-- // .container -->
+
+		</div><!-- // .services -->
+
+	</section><!-- // section#about -->
+
+
+<!-- Flexslider
+	================================================== -->
+
+
+<!-- Works (Two Columns)
+	================================================== -->
+	<section id="works" class="">
+		
+		<div class="container">
+			<div class="desktop-3 tablet-12 columns">
+				<h2>Portfolio</h2>
+			</div>
+			<div class="desktop-9 tablet-12 columns">
+				<p class="page-desc"></p>
+			</div>
+		</div><!-- // .container -->
+		
+		<div class="container">
+			
+			<div class="desktop-12 columns"><div class="border-top"></div></div>
+			
+			<div class="clear"></div>		
+			
+				<a href="https://evento-app.herokuapp.com" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item-image">
+							<img src="images/works_architecture01.jpg" alt="" />
+							<div class="text-block fh5co-item-text"> 
+								<h2>EVENTö</h2>
+							</div>
+
+							<h3>Eventö</h3>
+							<span class="category">EVENT PLANNER APP</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+				</a>
+				
+					<a href="single-architecture-sidebar-right.html" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item-image">
+							<img src="images/donut1.jpg" alt="" />
+							<div class="text-block fh5co-item-text"> 
+								<h2>TIC TAC TOE</h2>
+							</div>
+
+							<h3>Tic Tac Toe</h3>
+							<span class="category">GAME APP</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+				</a>
+				
+				
+				
+		
+
+				<div class="clear"></div>
+
+				<a href="single-architecture-sidebar-right.html" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item-image">
+							<img src="images/works_architecture03.jpg" alt="" />
+							<div class="text-block fh5co-item-text"> 
+							<h2>FOODIE</h2>
+							</div>
+
+							<h3>FOODIE</h3>
+							<span class="category">FOOD + DRINK APP</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+				</a>
+
+				<a href="single-architecture-sidebar-right.html" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item-image">
+							<img src="images/works_architecture04.jpg" alt="" />
+							<div class="text-block fh5co-item-text"> 
+								<h2>API MANIA</h2>
+							</div>
+
+							<h3>API Mania</h3>
+							<span class="category">API INTEGRATIONS</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+				</a>
+
+				<div class="clear"></div>
+						
+		</div><!-- // .container -->
+	</section><!-- // section#works -->
+
+
+<!-- About
+	================================================== -->
+	<section id="about" class="page">
+		
+		<div class="container">
+
+			<div class="desktop-12 columns"><div class="border-top"></div></div>
+			
+			<div class="clear"></div>
+
+			<div class="desktop-3 tablet-12 columns">
+				<h2>Work Experience</h2>
+			</div>
+			<div class="desktop-9 tablet-12 columns">
+				<p class="page-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. </p>
+			</div>
+		</div><!-- // .container -->
+
+		<div class="services">
+
+			<div class="container">
+				
+					<div class="item">
+						<div class="desktop-3 tablet-6 columns">
+							<img src="logos/mullenlowe.png" alt="">
+						</div><!-- // .desktop-3 -->
+
+						<div class="desktop-6 tablet-6 columns">
+							<h4>MullenLowe Profero</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident.</p>
+						</div><!-- // .desktop-6 -->
+
+						<div class="clear"></div>
+					</div><!-- // .item -->
+					
+					<div class="item">
+						<div class="desktop-3 offset-3 tablet-6 tablet-offset-0 columns">
+							<img src="logos/generalassembly.png" alt="">
+						</div><!-- // .desktop-3 -->
+
+						<div class="desktop-6 tablet-6 columns">
+							<h4>General Assembly</h4>
+							<p>In an immersive environment, I learnt JavaScript, 
+Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional object oriented programming concepts. </p>
+						</div><!-- // .desktop-6 -->
+
+						<div class="clear"></div>
+					</div><!-- // .item -->
+
+					<div class="item">
+						<div class="desktop-3 push-6 tablet-6 tablet-push-0 columns">
+							<img src="logos/giorgioarmani.png" alt="">
+						</div><!-- // .desktop-3 -->
+
+						<div class="desktop-6 pull-3 tablet-6 tablet-pull-0 columns">
+							<h4>Giorgio Armani</h4>
+							<p>I managed development and execution of marketing campaigns, including CRM, digital marketing and social media including email marketing, SMS and direct mail plus events using data-driven insights to deliver strategic marketing plans. </p>
+						</div><!-- // .desktop-6 -->
+
+						<div class="clear"></div>
+					</div><!-- // .item -->
+
+					<div class="item">
+						<div class="desktop-3 offset-3 tablet-6 tablet-offset-0 columns">
+							<img src="logos/davidjones.png" alt="">
+						</div><!-- // .desktop-3 -->
+
+						<div class="desktop-6 tablet-6 columns">
+							<h4>David Jones Limited</h4>
+							<p>I managed integrated marketing campaigns for this prestigious multi-channel retailer including digital, social, e-commerce, catalogue and print across fashion, home and beauty, supporting commercial initiatives. This included using SalesForce for campaign management, Basecamp for project management and HootSuite for social media.</p>
+						</div><!-- // .desktop-6 -->
+
+						<div class="clear"></div>
+					</div><!-- // .item -->
+
+			</div><!-- // .container -->
+
+		</div><!-- // .services -->
+
+	</section><!-- // section#about -->
+
+
+
+<!-- Flexslider
+	================================================== -->
+	<section id="home-slider">
+
+				<div class="slider">
+			<div class="flexslider">
+				<div class="slides">
+					<div>
+						<img src="images/slider/flexslider01.jpg" alt="" />
+					</div>
+
+					<div>
+						<img src="images/slider/flexslider02.jpg" alt="" />
+					</div>
+
+					<div>
+						<img src="images/slider/flexslider03.jpg" alt="" />
+					</div>
+
+					<div>
+						<img src="images/slider/flexslider04.jpg" alt="" />
+					</div>
+
+				</div>
+			</div>
+
+			<div class="flexslider-nav-carousel">
+				<div class="container">	
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>Email</h4>
+							<div class="line-separator"></div>
+							<a href="mailto:lukemico@me.com"><span class="category">lukemico@me.com</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->
+
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>GitHub</h4>
+							<div class="line-separator"></div>
+							<a href="https://www.linkedin.com/in/lukemico/"><span class="category">github.com/lukemico</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->
+
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>LinkedIn</h4>
+							<div class="line-separator"></div>
+							<a href="https://www.linkedin.com/in/lukemico/"><span class="category">linkedin.com/in/lukemico/</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->
+
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>Twitter</h4>
+							<div class="line-separator"></div>
+							<a href="https://twitter.com/LukeMico"><span class="category">@lukemico</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->					
+				</div><!-- // .container -->
+			</div><!-- // .flexslider-nav-carousel -->
+		</div><!-- // .slider -->
+
+		<div class="clear"></div>
+		
+	</section><!-- // #home-slider -->
+
+
+<!-- Works
+	================================================== -->
+	<section id="works">
+		
+		<div class="container">
+			
+			<div class="clear"></div>
+
+			</br >
+			<div class="desktop-3 tablet-12 columns">
+				<h2>Skills and Technology</h2>
+			</div>
+			<div class="desktop-9 tablet-12 columns">
+				<p class="page-desc"></p>
+			</div>
+			
+			<div class="desktop-12 columns"><div class="border-top"></div></div>
+			
+			
+		</div><!-- // .container -->
+
+		<div class="services">
+		
+		<div class="container">
+			<div class="desktop-12 columns"></div>			
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>JavaScript</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/javascript-original.svg" class="icon-logo" alt="JavaScript" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>HTML5</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/html5-original-wordmark.svg" class="icon-logo"  alt="HMTL5" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>CSS3</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/css3-original-wordmark.svg" class="icon-logo" alt="CSS3" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>NodeJS</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/nodejs-original-wordmark.svg" class="icon-logo" alt="NodeJS" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>React</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/react-original-wordmark.svg" class="icon-logo" alt="React" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				
+
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Ruby</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/ruby-original-wordmark.svg" class="icon-logo" alt="Ruby" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>jQuery</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/jquery-original-wordmark.svg" class="icon-logo" alt="jQuery" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Ruby on Rails</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/rails-original-wordmark.svg" class="icon-logo" alt="uby on Rails" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Bootstrap</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/bootstrap-plain-wordmark.svg" class="icon-logo" alt="Bootstrap" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>WebPack</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/webpack-original-wordmark.svg" class="icon-logo" alt="WebPack" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Babel</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/babel-plain.svg" class="icon-logo" alt="Babel" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>BackBone</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/backbonejs-plain-wordmark.svg" class="icon-logo" alt="BackBone" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>GitHub</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/github-original-wordmark.svg" class="icon-logo" alt="GitHub" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Heroku</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/heroku-plain-wordmark.svg" class="icon-logo" alt="Heroku" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>PostgresSQL</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/postgresql-original-wordmark.svg" class="icon-logo" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Slack</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/slack-original-wordmark.svg" class="icon-logo" alt="Slack" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Trello</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/trello-plain-wordmark.svg" class="icon-logo" alt="Trello" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="single-illustration-sidebar-left.html" class="permalink">
+					<div class="desktop-2 tablet-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Atom</h3>
+							<span class="category">Illustration</span>
+
+							<img src="logos/atom-original-wordmark.svg" class="icon-logo" alt="Atom" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+			<div class="clear"></div>
+		</div><!-- // .container -->
+	</section><!-- // section#works -->
+
+
+<!-- Flexslider
+	================================================== -->
+	<section id="home-slider">
+
+				<div class="slider">
+			<div class="flexslider">
+				<div class="slides">
+					<div>
+						<img src="images/slider/flexslider01.jpg" alt="" />
+					</div>
+
+					<div>
+						<img src="images/slider/flexslider02.jpg" alt="" />
+					</div>
+
+					<div>
+						<img src="images/slider/flexslider03.jpg" alt="" />
+					</div>
+
+					<div>
+						<img src="images/slider/flexslider04.jpg" alt="" />
+					</div>
+
+				</div>
+			</div>
+
+			<div class="flexslider-nav-carousel">
+				<div class="container">	
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>Email</h4>
+							<div class="line-separator"></div>
+							<a href="mailto:lukemico@me.com"><span class="category">lukemico@me.com</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->
+
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>GitHub</h4>
+							<div class="line-separator"></div>
+							<a href="https://www.linkedin.com/in/lukemico/"><span class="category">github.com/lukemico</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->
+
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>LinkedIn</h4>
+							<div class="line-separator"></div>
+							<a href="https://www.linkedin.com/in/lukemico/"><span class="category">linkedin.com/in/lukemico/</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->
+
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>Twitter</h4>
+							<div class="line-separator"></div>
+							<a href="https://twitter.com/LukeMico"><span class="category">@lukemico</span></a>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->					
+				</div><!-- // .container -->
+			</div><!-- // .flexslider-nav-carousel -->
+		</div><!-- // .slider -->
+
+		<div class="clear"></div>
+		
+		<div class="container">
+			
+			<div class="desktop-6 tablet-12 columns">
+				<div class="box-recent">
+					<h3><a href="archive-blog.html"></a></h3>
+
+					<a href="mailto:lukemico@me.com" class="permalink">
+						<div class="item">
+							<h4>Say Hello!</h4>
+							<p class="meta"><span class="date">EMAIL</span> / <span class="category">lukemico@me.com</span></p>
+						</div><!-- // .item -->
+					</a><!-- // .permalink -->
+
+
+					<a href="https://www.linkedin.com/in/lukemico/" class="permalink">
+						<div class="item">
+							<h4>Let's Connect</h4>
+							<p class="meta"><span class="date">LINKEDIN</span> / <span class="category">linkedin.com/in/lukemico/</span></p>
+						</div><!-- // .item -->
+					</a><!-- // .permalink -->
+
+					<a href="https://twitter.com/LukeMico" class="permalink">
+						<div class="item">
+								<h4>Send me a Tweet </h4>
+								<p class="meta"><span class="date">TWITTER</span> / <span class="category">@lukemico</span></p>
+						</div><!-- // .item -->
+					</a><!-- // .permalink -->
+
+				</div><!-- // .box-recent -->
+			</div><!-- // .desktop-6 -->
+
+			<div class="desktop-6 tablet-12 columns">
+				<div class="box-about">
+					
+					<h3 class="font-color-primary"><span class="underline"></span></h3>
+
+					<img src="<!-- images/box_about.png -->" alt="" />
+
+					<p class="tagline">If you're interested in development related opportunities or just want to grab a coffee, feel free to reach out.</p><!-- // p.tagline -->
+
+					<a href="mailto:lukemico@me.com" class="button full">GET IN TOUCH</a>
+				</div><!-- // .box-about -->
+			</div><!-- // .desktop-6 -->
+		</div><!-- // .container -->
+		
+	</section><!-- // #home-slider -->
+
+
+
+	<!-- Contact
+	================================================== -->
+	<section id="contact" class="section page">
+		<div class="container">
+<br />
+		<div class="desktop-12 columns"><div class="border-top"></div></div>
+			
+			<div class="clear"></div>
+
+			<div class="desktop-6 tablet-12 columns">
+
+<!-- 				<h2 class="border-top"></h2> -->
+					<ul class="">
+						<li><a class="" href="mailto:lukemico@me.com"></a></li>
+						<li><a class="" href=""></a></li>
+						<li><a class="" href=""></a></li>
+            		</ul>								
+				<div class="clear"></div>
+
+			</div><!-- // .desktop-6 -->
+			
+			<div class="desktop-6 tablet-12 nested columns">
+				
+				<div class="desktop-6 tablet-12 columns">
+<!-- 					<h2 class="border-top"></h2> -->
+					<p class="title-desc"></p>
+
+					<div id=""></div>
+				</div><!-- // .desktop-6 -->
+
+				<div class="clear"></div>
+
+				<div class="desktop-3 tablet-6 mobile-half columns">					
+
+				</div><!-- // .desktop-3 -->
+
+				<div class="desktop-3 tablet-6 mobile-half columns">
+					
+					<div class="">
+						<h3 class=""><span class=""></span></h3>
+
+						<p>
+							<a href="mailto:lukemico@me.com"></a>
+						</p>
+					</div><!-- // .box-contact -->
+
+				</div><!-- // .desktop-3 -->
+
+				<div class="clear"></div>
+
+			</div><!-- // .desktop-6 -->
+
+		</div><!-- // .container -->
+	</section><!-- // section#contact -->
+
+
+	<!-- Footer
+	================================================== -->
+	<section id="footer">
+		<div class="container">
+			
+			<div class="desktop-7 columns">
+				<ul id="social">
+					<li><a href="https://github.com/lukemico" class="hoverMe"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i>&nbsp; GitHub</a></li>
+					<li><a href="https://twitter.com/LukeMico" class="hoverMe"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>&nbsp; Twitter</a></li>
+					<li><a href="https://www.linkedin.com/in/lukemico/" class="hoverMe"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" height="100" width="100"></i>&nbsp; LinkedIn</a></li>
+				</ul><!-- // #social -->
+			</div><!-- // .desktop-9 -->
+
+			<div class="desktop-5 columns">
+				<p>Copyright &copy; <a href="https://www.linkedin.com/in/lukemico/" class="italic"></a>Luke&nbsp;Mico</p>
+			</div><!-- // .desktop-3 -->
+
+
+
+			<div class="clear"></div>
+		</div><!-- // .container -->
+	</section><!-- // section#footer -->
+
+
+	<!-- JS
+	================================================== -->
+	<!-- 
+		Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
+		Use jQuery 1.8 until Flexslider 2.2 stable version is released
+	-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="js/jQuery.BlackAndWhite.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/less-1.4.0.min.js"></script>
+	<script src="js/jquery.typeMenu.js"></script>
+	<script src="js/jquery.typeSticky.js"></script>
+	<script src="js/jquery.custom.js"></script>
+	<script src="https://use.fontawesome.com/5564d5d138.js"></script>
+
+
+<!-- End Document
+================================================== -->
 </body>
-
 </html>
