@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
 	<link rel="stylesheet" type="text/css" href="css/typegrid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		
 	<!--[if lt IE 8]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
@@ -83,7 +84,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="">
+						<a href="#projects">
 							<span class="count">02.</span>
 							Portfolio
 						</a>
@@ -128,7 +129,7 @@
 				<div class="desktop-12 columns">
 					<h1 class="elegantshadow"><a href="" title="Home">LUKE MICO</a></h1>
 					<br />
-					<span class="site-desc">Everything is connected - from product to all things digital.</span>
+					<span class="site-desc">everything is connected - from product to all things digital.</span>
 				</div><!-- // .desktop-6 -->
 
 				<div class="desktop-6 columns">
@@ -232,7 +233,7 @@
 					</div><!-- // .desktop-6 -->
 				</a>
 				
-					<a href="" class="permalink">
+					<a href="https://evening-meadow-28943.herokuapp.com/" class="permalink">
 					<div class="desktop-6 columns">
 						<div class="item-image">
 							<img src="images/donut1.jpg" alt="TIcTacToe Game" />
@@ -248,7 +249,7 @@
 				
 				<div class="clear"></div>
 
-				<a href="" class="permalink">
+				<a href="https://whispering-cliffs-35641.herokuapp.com/" class="permalink">
 					<div class="desktop-6 columns">
 						<div class="item-image">
 							<img src="images/works_architecture03.jpg" alt="FOODIE" />
@@ -262,7 +263,7 @@
 					</div><!-- // .desktop-6 -->
 				</a>
 
-				<a href="" class="permalink">
+				<a href="https://boiling-sands-50222.herokuapp.com/" class="permalink">
 					<div class="desktop-6 columns">
 						<div class="item-image">
 							<img src="images/works_architecture04.jpg" alt="API Mania" />
@@ -317,6 +318,20 @@
 						<div class="clear"></div>
 					</div><!-- // .item -->
 					
+					<div class="item">
+						<div class="desktop-3 offset-3 tablet-6 tablet-offset-0 columns">
+							<img src="" alt="">
+						</div><!-- // .desktop-3 -->
+
+						<div class="desktop-6 tablet-6 columns">
+							<h4></h4>
+							<p></p>
+						</div><!-- // .desktop-6 -->
+
+						<div class="clear"></div>
+					</div><!-- // .item -->
+
+
 					<div class="item">
 						<div class="desktop-3 offset-3 tablet-6 tablet-offset-0 columns">
 							<img src="logos/generalassembly.png" alt="General Assembly">
@@ -675,29 +690,8 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 <!-- Flexslider
 	================================================== -->
 	<section id="social">
-
-				<div class="slider">
-			<div class="flexslider">
-				<div class="slides">
-					<div>
-						<img src="" alt="" />
-					</div>
-
-					<div>
-						<img src="" alt="" />
-					</div>
-
-					<div>
-						<img src="" alt="" />
-					</div>
-
-					<div>
-						<img src="" alt="" />
-					</div>
-
-				</div>
-			</div>
-
+		<div class="slider">
+			
 			<div class="flexslider-nav-carousel">
 				<div class="container">	
 					<div class="desktop-3 hide-under-tablet columns">
@@ -736,7 +730,9 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 		</div><!-- // .slider -->
 
 		<div class="clear"></div>
-		
+	</section>
+
+	<section id="contact" class="section page">	
 		<div class="container">
 			
 			<div class="desktop-6 tablet-12 columns">
@@ -745,21 +741,21 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 
 					<a href="mailto:lukemico@me.com" class="permalink">
 						<div class="item">
-							<h4>Say Hello!</h4>
+							<h4  class="item-email animated pulse">Say Hello!</h4>
 							<p class="meta"><span class="date">EMAIL</span> / <span class="category">lukemico@me.com</span></p>
 						</div><!-- // .item -->
 					</a><!-- // .permalink -->
 
 					<a href="https://www.linkedin.com/in/lukemico/" class="permalink">
 						<div class="item">
-							<h4>Let's Connect</h4>
+							<h4 class="item-linkedin animated pulse">Let's Connect</h4>
 							<p class="meta"><span class="date">LINKEDIN</span> / <span class="category">linkedin.com/in/lukemico/</span></p>
 						</div><!-- // .item -->
 					</a><!-- // .permalink -->
 
 					<a href="https://twitter.com/lukemico" class="permalink">
 						<div class="item">
-								<h4>Send me a Tweet </h4>
+								<h4 class="item-twitter animated pulse">Send me a Tweet </h4>
 								<p class="meta"><span class="date">TWITTER</span> / <span class="category">@lukemico</span></p>
 						</div><!-- // .item -->
 					</a><!-- // .permalink -->
@@ -770,11 +766,9 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 			<div class="desktop-6 tablet-12 columns">
 				<div class="box-about">
 					
-					<h3 class="font-color-primary"><span class="underline"></span></h3>
-
 					<img src="" alt="" />
 
-					<p class="tagline">If you're interested in development related opportunities or just want to grab a coffee, feel free to reach out.</p><!-- // p.tagline -->
+					<p class="tagline">If you're interested in development related opportunities or just want to grab a coffee, <br />feel free to reach out.</p><!-- // p.tagline -->
 
 					<a href="mailto:lukemico@me.com" class="button full">GET IN TOUCH</a>
 				</div><!-- // .box-about -->
@@ -826,25 +820,20 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 
 	<!-- Footer
 	================================================== -->
-	<section id="footer">
+	
+	<footer class="footer-distributed">
 		<div class="container">
-			
-			<div class="desktop-7 columns">
-				<ul id="social">
-					<li><a href="https://github.com/lukemico" class="hoverMe"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i>&nbsp; GitHub</a></li>
-					<li><a href="https://twitter.com/lukemico" class="hoverMe"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>&nbsp; Twitter</a></li>
-					<li><a href="https://www.linkedin.com/in/lukemico/" class="hoverMe"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" height="100" width="100"></i>&nbsp; LinkedIn</a></li>
-				</ul><!-- // #social -->
-			</div><!-- // .desktop-9 -->
+			<div class="footer-left"></div>
 
-			<div class="desktop-5 columns">
-				<p>Copyright &copy; <a href="https://www.linkedin.com/in/lukemico/" class="italic"></a>Luke&nbsp;Mico</p>
-			</div><!-- // .desktop-3 -->
+			<div class="footer-center">
+				<h1 class="elegantshadow"><a href="#nav" title="Home">LUKE MICO</a></h1>
+			</div>
 
-			<div class="clear"></div>
-		</div><!-- // .container -->
-	</section><!-- // section#footer -->
-
+			<div class="footer-right">
+				<p class="footer-company-about">
+			</div>
+		</div>
+	</footer>
 
 	<!-- JS
 	================================================== -->
@@ -860,7 +849,6 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 	<script src="js/jquery.typeSticky.js"></script>
 	<script src="js/jquery.custom.js"></script>
 	<script src="https://use.fontawesome.com/5564d5d138.js"></script>
-
 
 <!-- End Document
 ================================================== -->

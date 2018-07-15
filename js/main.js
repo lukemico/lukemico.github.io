@@ -153,6 +153,41 @@ $("#return-to-top").click(function() {
   );
 });
 
+$('#pulse').addClass('animated pulse');
+
+
+$.fn.extend({
+  animateCss: function(pulse, callback) {
+    var animationEnd = (function(el) {
+      var animations = {
+        animation: 'animationend',
+        OAnimation: 'oAnimationEnd',
+        MozAnimation: 'mozAnimationEnd',
+        WebkitAnimation: 'webkitAnimationEnd',
+      };
+
+      for (var t in animations) {
+        if (el.style[t] !== undefined) {
+          return animations[t];
+        }
+      }
+    })(document.createElement('div'));
+
+    this.addClass('animated ' + pulse).one(animationEnd, function() {
+      $(this).removeClass('animated ' + pulse);
+
+      if (typeof callback === 'function') callback();
+    });
+
+    return this;
+  },
+});
+
+$('#pulse').animateCss('pulse');
+
+
+
+
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -180,3 +215,4 @@ $(document).ready(function(){
 });
 </script>
 
+subversion
