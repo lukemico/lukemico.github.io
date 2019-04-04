@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="css/typegrid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		
 	<!--[if lt IE 8]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
@@ -51,24 +52,26 @@
 </head>
 
 <body>
-		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 	<!-- Header - Half Logo
 	================================================== -->
 	<section id="header">
-
 		<!-- * * * * * * * * * * * * * * * * * * * * * * *
 
 			Top Bar & Menu (#nav)
 
 		* * * * * * * * * * * * * * * * * * * * * * * * -->
 		<div class="topbar">
+				<div class="logo-wrap">
+						<div class="container">
+							<div class="desktop-12 columns">
+								<h1 class="elegantshadow"><a href="" title="Home">LUKE MICO</a></h1>
+							</div><!-- // .desktop-6 -->
+							<div class="clear"></div>
+						</div><!-- // .container -->
+					</div><!-- // .logo-wrap -->
 			<div class="container">
-					
-				<!--
-					A custom jQuery plugin called typeMenu handles the menu
-					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
-				-->
 				<ul id="nav" class="full">
 					<li>
 						<a href="#about">
@@ -123,24 +126,7 @@
 			</div><!-- // .container -->
 		</div><!-- // .topbar -->
 
-		<div class="logo-wrap">
-			<div class="container">
-				<div class="desktop-12 columns">
-					<h1 class="elegantshadow"><a href="" title="Home">LUKE MICO</a></h1>
-					<br />
-					<span class="site-desc">everything is connected - from product to all things digital.</span>
-				</div><!-- // .desktop-6 -->
-
-				<div class="desktop-6 columns">
-					<h2 >
-						<br />
-					
-					</p><!-- // .site-desc -->
-				</div><!-- // .desktop-6 -->
-
-				<div class="clear"></div>
-			</div><!-- // .container -->
-		</div><!-- // .logo-wrap -->
+		
 	</section><!-- // #header -->
 
 	<!-- About
@@ -746,21 +732,27 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 					<a href="mailto:lukemico@me.com" class="permalink">
 						<div class="item">
 							<h4  class="item-email animated pulse">Say Hello!</h4>
-							<p class="meta"><span class="date">EMAIL</span> / <span class="category">lukemico@me.com</span></p>
+							<p class="meta">
+								<i class="fas fa-envelope-square fa-2x"></i>
+								<span class="category">&nbsp;lukemico@me.com</span>
+							</p>
 						</div><!-- // .item -->
 					</a><!-- // .permalink -->
 
 					<a href="https://www.linkedin.com/in/lukemico/" class="permalink">
 						<div class="item">
 							<h4 class="item-linkedin animated pulse">Let's Connect</h4>
-							<p class="meta"><span class="date">LINKEDIN</span> / <span class="category">linkedin.com/in/lukemico/</span></p>
+							<p class="meta">
+								<i class="fa fa-linkedin-square fa-2x"></i>
+								<span class="category">&nbsp;linkedin.com/in/lukemico</span>
+							</p>
 						</div><!-- // .item -->
 					</a><!-- // .permalink -->
 
 					<a href="https://twitter.com/lukemico" class="permalink">
 						<div class="item">
 								<h4 class="item-twitter animated pulse">Send me a Tweet </h4>
-								<p class="meta"><span class="date">TWITTER</span> / <span class="category">@lukemico</span></p>
+								<p class="meta"><i class="fab fa-twitter-square fa-2x"></i><span class="category">&nbsp;@lukemico</span></p>
 						</div><!-- // .item -->
 					</a><!-- // .permalink -->
 
@@ -772,7 +764,7 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 					
 					<img src="" alt="" />
 
-					<p class="tagline">If you're interested in development related opportunities or just want to grab a coffee, <br />feel free to reach out.</p><!-- // p.tagline -->
+					<p class="tagline">If you're interested in development related opportunities or just want to grab a coffee, feel free to reach out.</p><!-- // p.tagline -->
 
 					<a href="mailto:lukemico@me.com" class="button full">GET IN TOUCH</a>
 				</div><!-- // .box-about -->
@@ -827,24 +819,16 @@ Ruby, HTML5 and CSS3 languages, frameworks Rails and React as well as functional
 	
 	<footer class="footer-distributed">
 		<div class="container">
-			<div class="footer-left"></div>
-
-			<div class="footer-center">
-				<h1 class="elegantshadow"><a href="#nav" title="Home">LUKE MICO</a></h1>
-			</div>
-
-			<div class="footer-right">
-				<p class="footer-company-about">
-			</div>
+			<div class="desktop-12 columns">
+				<h1 class="elegantshadow-v2" style="text-align: center"><a href="" title="Home">LUKE MICO</a></h1>
+			</div><!-- // .desktop-6 -->
+			<br><br><br><br>
+			<div class="desktop-12 columns" style="text-align: center; font-size: 14px ; font-weight:300">© luke mico 2019. All rights reserved.</div>
 		</div>
 	</footer>
 
 	<!-- JS
 	================================================== -->
-	<!-- 
-		Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
-		Use jQuery 1.8 until Flexslider 2.2 stable version is released
-	-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script src="js/jQuery.BlackAndWhite.min.js"></script>
 	<script src="js/modernizr.js"></script>
