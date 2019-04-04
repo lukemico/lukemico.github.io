@@ -175,7 +175,7 @@ b, strong { font-weight: bold; }
 	.button,
 	a.button {
 		color: white;
-		background: #c7c1a9;
+		background: #22eedd;
 		font-size: 14px; 
 		font-weight: bold; 
 		text-align: center;
@@ -323,6 +323,7 @@ b, strong { font-weight: bold; }
 		font-family: 'Roboto Slab', Georgia, serif;
 		font-size: 32px;
 		line-height: 60px;
+		text-align: justify;
 		font-weight: 300; 
 		margin-top: 30px;
 		margin-bottom: 50px;
@@ -342,7 +343,10 @@ b, strong { font-weight: bold; }
 			}
 		}
 
-	.page p { margin-top: 30px; }
+	.page p { 
+		margin-top: 30px;
+		text-align: justify;
+	 }
 
 
 
@@ -471,11 +475,11 @@ b, strong { font-weight: bold; }
 		}
 
 			ul#nav > li a span.count {
-				color: #999999;
+				color: #22eedd;
 				display: block;
 				font-size: 11px;
 			}
-
+			
 		ul#nav > li a:hover {
 			color: white;
 			border-bottom: 1px solid white;
@@ -523,14 +527,14 @@ b, strong { font-weight: bold; }
 		
 		ul#nav li a:hover,#c7c1a9
 		ul#nav li a:focus {
-			color: #c7c1a9;
-			border-bottom: 1px solid #c7c1a9;
+			color: #22eedd;
+			border-bottom: 1px solid #22eedd;
 		}
 
 		ul#nav li ul a:hover,#c7c1a9
 		ul#nav li ul a:focus {
-			color: #c7c1a9;
-			border-bottom: 1px solid #c7c1a9;
+			color: #22eedd;
+			border-bottom: 1px solid #22eedd;
 		}
 
 		ul#nav li ul li:last-child > a,
@@ -591,7 +595,7 @@ b, strong { font-weight: bold; }
 			3.2 Header
 	---------------------------------------------------*/
 	
-	#header .logo-wrap { padding: 50px 0 50px 0; }
+	#header .logo-wrap { padding: 50px 0 0 0; }
 
 	#header h1 {
 		font-size: 44px;
@@ -680,6 +684,7 @@ b, strong { font-weight: bold; }
 		.box-about p.tagline {
 			font-size: 20px;
 			line-height: 36px;
+			margin-top: 0;
 		}
 	}
 
@@ -1933,18 +1938,18 @@ b, strong { font-weight: bold; }
 
 		.item-nav span.category {
 			display: inline-block;
-			color: #7C796A;
+			color: #fff;
     		font-size: 11px;
 			line-height: 21px;
 /* 			text-transform: uppercase;  */
 			letter-spacing: 2px; 
 			margin-top: 10px; 
-			border-top: 1px solid #333; 
+			border-top: 1px solid #22eedd; 
 			padding-top: 10px; 
 		}
 
 		.item-nav span.category:hover {
-			color: #fff;
+			color: #22eedd;
 		}	
 
 	.item-nav.flex-active {}
