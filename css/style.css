@@ -1976,8 +1976,6 @@ b, strong { font-weight: bold; }
 
 	}
 	
-	
-	
 	h1.elegantshadow	{
 	color: #131313;
 	background-color: white;
@@ -1989,7 +1987,8 @@ b, strong { font-weight: bold; }
 
 h1.elegantshadow-v2	{
 	color: #131313;
-	background-color: white;
+    background-color: white;
+    font-size: 10px;
 	font-weight: bold;
 	padding-bottom: 70px;
 	letter-spacing: .40em;
