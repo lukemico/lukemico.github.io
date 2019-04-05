@@ -221,7 +221,7 @@ b, strong { font-weight: bold; }
 
 			button:hover,
 			.button:hover,
-			a.button:hover { background: black; color: white; }
+			a.button:hover { background:#0077FF; color: white; }
 
 			button.black,
 			.button.black,
