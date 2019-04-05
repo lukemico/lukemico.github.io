@@ -474,7 +474,7 @@ b, strong { font-weight: bold; }
 			border-bottom: 1px solid #4F4F4F
 		}
 
-			ul#nav > li a span.count {
+			ul#nav > li a countspan. {
 				color: #0077FF;
 				display: block;
 				font-size: 11px;
@@ -575,10 +575,20 @@ b, strong { font-weight: bold; }
 
 		#menu-mobile-wrapper ul#menu-mobile li {
 			font-size: 12px;
-			line-height: 21px;
+            line-height: 21px;
+            color: #0077FF;
 			display: block;
 		}
 
+		#menu-mobile-wrapper ul#menu-mobile li span.count {
+            color: #0077FF;
+            font-weight: 700;
+		}
+
+		#menu-mobile-wrapper ul#menu-mobile li span.navTitle {
+            color: #0077FF;
+		}
+        
 			#menu-mobile-wrapper ul#menu-mobile li a {
 				color: #444;
 				display: block;
@@ -705,6 +715,15 @@ b, strong { font-weight: bold; }
 	#about .services .item { padding: 30px 0; }
 
 	#about .services h4 {
+        color: #0077FF;
+		font-size: 16px;
+		line-height: 26px;
+		display: inline-block;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #111111;
+    }
+    
+    #workexperience .services h4 {
         color: #0077FF;
 		font-size: 16px;
 		line-height: 26px;
