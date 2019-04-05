@@ -221,7 +221,7 @@ b, strong { font-weight: bold; }
 
 			button:hover,
 			.button:hover,
-			a.button:hover { background: black; }
+			a.button:hover { background: black; color: white; }
 
 			button.black,
 			.button.black,
@@ -320,7 +320,7 @@ b, strong { font-weight: bold; }
 
 	.page p.page-desc {
 		color: #222;
-		font-family: 'Roboto Slab', Georgia, serif;
+		font-family: 'Lora', serif;
 		font-size: 32px;
 		line-height: 60px;
 		text-align: justify;
@@ -672,7 +672,7 @@ b, strong { font-weight: bold; }
 		.box-about h3 { margin-bottom: 50px; }
 
 		.box-about p.tagline {
-			font-family: 'Roboto Slab', Georgia, serif;
+			font-family: 'Lora', serif;
 			font-size: 24px;
 			line-height: 44px;
 			font-weight: 300; 
@@ -1247,7 +1247,7 @@ b, strong { font-weight: bold; }
 	}
 
 	#archive .entry h4 {
-		font-family: 'Roboto Slab', Georgia, serif;
+		font-family: 'Lora', serif;
 		font-size: 26px;
 		line-height: 40px;
 		font-weight: 300; 
@@ -1308,7 +1308,7 @@ b, strong { font-weight: bold; }
 	}
 
 		#archive .entry blockquote p {
-			font-family: 'Roboto Slab', Georgia, serif;
+			font-family: 'Lora', serif;
 			font-size: 36px;
 			line-height: 60px;
 			font-style: italic; 
@@ -2059,7 +2059,7 @@ h1.elegantshadow-v2	{
     padding-right: 20px;
 	text-align: center;
 	vertical-align:middle;
-	font-family: 'Roboto Slab', Georgia, serif;
+	font-family: 'Lora', serif
 	font-size: 30px;
 }	
 
