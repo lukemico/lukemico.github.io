@@ -186,11 +186,6 @@ b, strong { font-weight: bold; }
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		-ms-border-radius: 4px;
-		-o-border-radius: 4px;
-		border-radius: 4px;
 	}
 
 		button.small,
@@ -211,17 +206,12 @@ b, strong { font-weight: bold; }
 		a.button.full {
 			display: block;
 			width: 100%;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			-ms-border-radius: 5px;
-			-o-border-radius: 5px;
-			border-radius: 5px;
 			padding: 30px 40px 26px 40px;
 		}
 
 			button:hover,
 			.button:hover,
-			a.button:hover { background: #22eedd; color: white; }
+			a.button:hover { background: #111; color: white; }
 
 			button.black,
 			.button.black,
@@ -509,6 +499,7 @@ b, strong { font-weight: bold; }
 
 	ul#nav > li.hasChild:hover a,
 	ul#nav > li.hasChild.hover a { border-bottom: 1px solid white; }
+	ul#nav > li.hasChild.hover li.last-child > a { border-bottom: none; }
 
 	ul#nav li ul {
 		background: #111;
