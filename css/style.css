@@ -1968,8 +1968,6 @@ b, strong { font-weight: bold; }
 			color: #0077ff;
 		}	
 
-	.item-nav.flex-active {}
-
 	.item-nav.flex-active h4 { 
 		color: white; 
 	}
