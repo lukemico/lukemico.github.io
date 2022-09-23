@@ -444,7 +444,7 @@ b, strong { font-weight: bold; }
 	ul#nav li { position: relative; }
 
 		ul#nav li ul a {
-			color: #555;
+			color: #999999;
 			padding: 25px 0;
 			border-bottom: 1px solid black;
 			list-style-type: none;
