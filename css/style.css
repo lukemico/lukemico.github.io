@@ -313,7 +313,7 @@ b, strong { font-weight: bold; }
 		color: #222;
 		font-family: 'Lora', serif;
 		font-size: 24px;
-		line-height: 60px;
+		line-height: 2;
 		text-align: justify;
 		font-weight: 300;
 		margin-top: 30px;
@@ -2078,7 +2078,7 @@ h1.elegantshadow-v2	{
 	width: 100%;
 	opacity: 0;
 	transition: 0.5s ease;
-	background-color: #000000;
+	background-color: #e1f6ed;
 }
 
 .imageContainer:hover .overlay {
@@ -2086,7 +2086,7 @@ h1.elegantshadow-v2	{
 }
 
 .textOverlay {
-	color: white;
+	color: black;
 	width: 100%;
 	font-size: 16px;
 	position: absolute;
