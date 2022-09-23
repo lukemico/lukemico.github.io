@@ -1966,7 +1966,7 @@ b, strong { font-weight: bold; }
 		}
 
 		.item-nav span.category:hover {
-			color: black;
+			color: #999999;
 		}
 
 	.item-nav.flex-active h4 {

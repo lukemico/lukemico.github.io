@@ -1943,7 +1943,7 @@ b, strong { font-weight: bold; }
 		}
 
 		.item-nav span.category:hover {
-			color: #fff;
+			color: #999999;
 		}
 
 	.item-nav.flex-active {}
