@@ -649,7 +649,7 @@ b, strong { font-weight: bold; }
 
 		.box-recent a.permalink p.meta { color: #444444; }
 
-			.box-recent a.permalink p.meta span { color: #7C796A; }
+			.box-recent a.permalink p.meta span { color: #999999; }
 
 	.box-recent a.permalink:hover {
 		color: #444444;
