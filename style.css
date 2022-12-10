@@ -484,7 +484,7 @@ b, strong { font-weight: bold; }
 
 	ul#nav > li:hover,
 	ul#nav > li.hover {
-		background: #e1f6ed;
+		background: #C0F4DD;
 		margin: 0;
 	}
 
@@ -1943,7 +1943,7 @@ b, strong { font-weight: bold; }
 		}
 
 		.item-nav span.category:hover {
-			color: #e1f6ed;
+			color: #C0F4DD;
 		}
 
 	.item-nav.flex-active {}

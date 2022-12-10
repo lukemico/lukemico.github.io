@@ -212,7 +212,7 @@ b, strong { font-weight: bold; }
 
 			button:hover,
 			.button:hover,
-			a.button:hover { background: #e1f6ed; color: black; border: 2px solid black; border-radius: 4px; }
+			a.button:hover { background: #C0F4DD; color: black; border: 2px solid #C0F4DD; border-radius: 4px; }
 
 			button.black,
 			.button.black,
@@ -483,7 +483,7 @@ b, strong { font-weight: bold; }
 
 	ul#nav > li:hover,
 	ul#nav > li.hover {
-		background: #e1f6ed;
+		background: #C0F4DD;
 		margin: 0;
 	}
 
@@ -506,7 +506,7 @@ b, strong { font-weight: bold; }
 	ul#nav > li.hasChild.hover li.last-child > a { border-bottom: none; }
 
 	ul#nav li ul {
-		background: #e1f6ed;
+		background: #C0F4DD;
 		width: 100%;
 		visibility: hidden;
 		position: absolute;
@@ -1966,7 +1966,7 @@ b, strong { font-weight: bold; }
 		}
 
 		.item-nav span.category:hover {
-			color: #e1f6ed;
+			color: #C0F4DD;
 		}
 
 	.item-nav.flex-active h4 {
@@ -2078,7 +2078,7 @@ h1.elegantshadow-v2	{
 	width: 100%;
 	opacity: 0;
 	transition: 0.5s ease;
-	background-color: #e1f6ed;
+	background-color: #C0F4DD;
 }
 
 .imageContainer:hover .overlay {
