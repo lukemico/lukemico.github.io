@@ -2066,6 +2066,7 @@ h1.elegantshadow-v2	{
 	display: block;
 	width: 100%;
 	height: auto;
+	max-height: 220px;
 }
 
 .overlay {
